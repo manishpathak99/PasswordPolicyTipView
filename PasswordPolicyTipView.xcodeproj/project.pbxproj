@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		26B627A720EB624900C4C5AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B627A620EB624900C4C5AD /* AppDelegate.swift */; };
-		26B627A920EB624900C4C5AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B627A820EB624900C4C5AD /* ViewController.swift */; };
 		26B627AC20EB624900C4C5AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B627AA20EB624900C4C5AD /* Main.storyboard */; };
 		26B627AE20EB624900C4C5AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B627AD20EB624900C4C5AD /* Assets.xcassets */; };
 		26B627B120EB624900C4C5AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B627AF20EB624900C4C5AD /* LaunchScreen.storyboard */; };
+		26B627B920EB63E100C4C5AD /* ToolTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B627B820EB63E000C4C5AD /* ToolTipView.swift */; };
+		26B627BA20EB830D00C4C5AD /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B627A820EB624900C4C5AD /* TipViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26B627A320EB624900C4C5AD /* PasswordPolicyTipView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordPolicyTipView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B627A620EB624900C4C5AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26B627A820EB624900C4C5AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26B627A820EB624900C4C5AD /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		26B627AB20EB624900C4C5AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26B627AD20EB624900C4C5AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26B627B020EB624900C4C5AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26B627B220EB624900C4C5AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26B627B820EB63E000C4C5AD /* ToolTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolTipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				26B627A620EB624900C4C5AD /* AppDelegate.swift */,
-				26B627A820EB624900C4C5AD /* ViewController.swift */,
+				26B627B820EB63E000C4C5AD /* ToolTipView.swift */,
+				26B627A820EB624900C4C5AD /* TipViewController.swift */,
 				26B627AA20EB624900C4C5AD /* Main.storyboard */,
 				26B627AD20EB624900C4C5AD /* Assets.xcassets */,
 				26B627AF20EB624900C4C5AD /* LaunchScreen.storyboard */,
@@ -136,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26B627A920EB624900C4C5AD /* ViewController.swift in Sources */,
+				26B627B920EB63E100C4C5AD /* ToolTipView.swift in Sources */,
+				26B627BA20EB830D00C4C5AD /* TipViewController.swift in Sources */,
 				26B627A720EB624900C4C5AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
