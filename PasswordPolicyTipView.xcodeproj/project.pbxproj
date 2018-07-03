@@ -13,6 +13,11 @@
 		26B627B120EB624900C4C5AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B627AF20EB624900C4C5AD /* LaunchScreen.storyboard */; };
 		26B627B920EB63E100C4C5AD /* ToolTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B627B820EB63E000C4C5AD /* ToolTipView.swift */; };
 		26B627BA20EB830D00C4C5AD /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B627A820EB624900C4C5AD /* TipViewController.swift */; };
+		26B627BC20EB8DA900C4C5AD /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B627BB20EB8DA800C4C5AD /* PasswordValidator.swift */; };
+		26B627BE20EB911600C4C5AD /* PasswordPolicyTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B627BD20EB911600C4C5AD /* PasswordPolicyTipView.swift */; };
+		26E2BCEE20EB9FF20059F5E4 /* TipViewControllerSample2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E2BCED20EB9FF20059F5E4 /* TipViewControllerSample2.swift */; };
+		26E2BCF020EBB23F0059F5E4 /* PasswordPolicyTipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26E2BCEF20EBB23F0059F5E4 /* PasswordPolicyTipView.xib */; };
+		26E2BCF120EBB6B60059F5E4 /* PasswordPolicyTipView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 26E2BCEF20EBB23F0059F5E4 /* PasswordPolicyTipView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,10 @@
 		26B627B020EB624900C4C5AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26B627B220EB624900C4C5AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26B627B820EB63E000C4C5AD /* ToolTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolTipView.swift; sourceTree = "<group>"; };
+		26B627BB20EB8DA800C4C5AD /* PasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
+		26B627BD20EB911600C4C5AD /* PasswordPolicyTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordPolicyTipView.swift; sourceTree = "<group>"; };
+		26E2BCED20EB9FF20059F5E4 /* TipViewControllerSample2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewControllerSample2.swift; sourceTree = "<group>"; };
+		26E2BCEF20EBB23F0059F5E4 /* PasswordPolicyTipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasswordPolicyTipView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +66,12 @@
 			isa = PBXGroup;
 			children = (
 				26B627A620EB624900C4C5AD /* AppDelegate.swift */,
+				26B627BB20EB8DA800C4C5AD /* PasswordValidator.swift */,
 				26B627B820EB63E000C4C5AD /* ToolTipView.swift */,
+				26B627BD20EB911600C4C5AD /* PasswordPolicyTipView.swift */,
+				26E2BCEF20EBB23F0059F5E4 /* PasswordPolicyTipView.xib */,
 				26B627A820EB624900C4C5AD /* TipViewController.swift */,
+				26E2BCED20EB9FF20059F5E4 /* TipViewControllerSample2.swift */,
 				26B627AA20EB624900C4C5AD /* Main.storyboard */,
 				26B627AD20EB624900C4C5AD /* Assets.xcassets */,
 				26B627AF20EB624900C4C5AD /* LaunchScreen.storyboard */,
@@ -127,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26B627B120EB624900C4C5AD /* LaunchScreen.storyboard in Resources */,
+				26E2BCF020EBB23F0059F5E4 /* PasswordPolicyTipView.xib in Resources */,
 				26B627AE20EB624900C4C5AD /* Assets.xcassets in Resources */,
 				26B627AC20EB624900C4C5AD /* Main.storyboard in Resources */,
 			);
@@ -139,9 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E2BCF120EBB6B60059F5E4 /* PasswordPolicyTipView.xib in Sources */,
+				26B627BE20EB911600C4C5AD /* PasswordPolicyTipView.swift in Sources */,
 				26B627B920EB63E100C4C5AD /* ToolTipView.swift in Sources */,
 				26B627BA20EB830D00C4C5AD /* TipViewController.swift in Sources */,
+				26E2BCEE20EB9FF20059F5E4 /* TipViewControllerSample2.swift in Sources */,
 				26B627A720EB624900C4C5AD /* AppDelegate.swift in Sources */,
+				26B627BC20EB8DA900C4C5AD /* PasswordValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

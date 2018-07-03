@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PasswordPolicyTipView/ToolTipView.swift"
-            timestampString = "552307026.828285"
+            timestampString = "552344820.573259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PasswordPolicyTipView/ToolTipView.swift"
-            timestampString = "552307026.828449"
+            filePath = "PasswordPolicyTipView/PasswordPolicyTipView.swift"
+            timestampString = "552344820.573348"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "draw(_:)"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "validatePassword(text:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

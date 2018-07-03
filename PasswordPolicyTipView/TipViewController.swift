@@ -32,11 +32,14 @@ class TipViewController: UIViewController, UITextFieldDelegate {
     let redImage = UIImage(named: "red_cross")
     let blackImage = UIImage(named: "black_dot")
     
+    var passwordValidator: PasswordValidator!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.initPasswordPolicy()
+        passwordValidator = PasswordValidator()
         
         textField.delegate = self
         textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
@@ -85,9 +88,9 @@ class TipViewController: UIViewController, UITextFieldDelegate {
             self.make(label: eightCharacterLabel, imgView: eightCharacterImgView, color: .green)
             
             
-            let hasNumLetters = isMixOfLettersAndNumbers(text)
-            let hasUpperLowerChars = isMixOfUpperLowercase(text)
-            let hasSpecialChars = hasSpecialCharacter(text)
+            let hasNumLetters = passwordValidator.isMixOfLettersAndNumbers(text)
+            let hasUpperLowerChars = passwordValidator.isMixOfUpperLowercase(text)
+            let hasSpecialChars = passwordValidator.hasSpecialCharacter(text)
             //
             if ((hasUpperLowerChars && hasNumLetters) || (hasNumLetters && hasSpecialChars) || (hasUpperLowerChars && hasSpecialChars)) {
                 // green should contain
@@ -121,25 +124,9 @@ class TipViewController: UIViewController, UITextFieldDelegate {
             // red
             self.make(label: eightCharacterLabel, imgView: eightCharacterImgView, color: .red)
         }
-        
-        
-        
+
     }
-    
-    func isMixOfLettersAndNumbers(_ text: String) -> Bool {
-        let regEx = "(?=.*[A-Za-z])(?=.*\\d).*"
-        return NSPredicate(format:"SELF MATCHES %@", regEx).evaluate(with: text)
-    }
-    
-    func isMixOfUpperLowercase(_ text: String) -> Bool {
-        let regEx = "(?=.*[A-Z])(?=.*[a-z]).*"
-        return NSPredicate(format:"SELF MATCHES %@", regEx).evaluate(with: text)
-    }
-    
-    func hasSpecialCharacter(_ text: String) -> Bool {
-        let regEx = "(?=.*[$@$!%*#?&]).*"
-        return NSPredicate(format:"SELF MATCHES %@", regEx).evaluate(with: text)
-    }
+
 
 }
 
